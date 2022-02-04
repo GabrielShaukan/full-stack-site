@@ -1,0 +1,35 @@
+
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+    
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.05);
+    }
+
+    .card {
+        overflow:hidden;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        cursor:pointer;
+        transition:transform 200ms ease-in;
+        background-color: #ffffff;
+        box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius:0.2rem;
+    }
+
+    .card__title {
+        padding:0.4rem;
+        color:black;
+        margin-top:0.5rem;
+    }
